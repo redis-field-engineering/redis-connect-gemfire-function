@@ -9,6 +9,27 @@
     <version>0.10.2</version>
     <name>Redis Connect Gemfire Function</name>
     <description>Redis Connect Gemfire Function for initial/batch load</description>
+    <url>https://github.com/redis-field-engineering/redis-connect-gemfire-function</url>
+    <inceptionYear>2023</inceptionYear>
+
+    <licenses>
+        <license>
+            <name>Redis Enterprise License</name>
+            <url>https://redis.com/legal/licenses/</url>
+            <distribution>repo</distribution>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <id>viragtripathi</id>
+            <name>Redis Ltd</name>
+            <url>https://github.com/viragtripathi</url>
+            <roles>
+                <role>Committer</role>
+            </roles>
+        </developer>
+    </developers>
 
     <properties>
         <java.version>1.8</java.version>
