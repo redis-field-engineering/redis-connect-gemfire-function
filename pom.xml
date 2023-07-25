@@ -121,7 +121,7 @@
                                                 <artifacts>
                                                     <artifact>
                                                         <path>
-                                                            ${project.build.directory}/${project.artifactId}-${project.version}.tar.gz
+                                                            ${project.build.directory}/${project.artifactId}-${project.version}.jar
                                                         </path>
                                                     </artifact>
                                                 </artifacts>
