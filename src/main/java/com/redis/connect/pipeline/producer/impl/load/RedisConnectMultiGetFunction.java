@@ -4,7 +4,6 @@ import org.apache.geode.cache.execute.Function;
 import org.apache.geode.cache.execute.FunctionContext;
 import org.apache.geode.cache.execute.FunctionException;
 import org.apache.geode.cache.execute.RegionFunctionContext;
-import org.apache.geode.cache.partition.PartitionRegionHelper;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Set;
@@ -26,7 +25,7 @@ public class RedisConnectMultiGetFunction implements Function {
 
                 Map<Object, Object> resultMap = new HashMap(keySet.size());
                 for (Object key : keySet)
-                    resultMap.put(key, PartitionRegionHelper.getLocalDataForContext(context).get(key));
+                    resultMap.put(key, context.getDataSet().get(key));
                 context.getResultSender().sendResult(resultMap);
             } else context.getResultSender().sendResult(null);
 

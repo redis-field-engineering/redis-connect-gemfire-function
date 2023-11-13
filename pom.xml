@@ -6,7 +6,7 @@
 
     <groupId>com.redis.connect</groupId>
     <artifactId>redis-connect-gemfire-function</artifactId>
-    <version>0.10.2</version>
+    <version>0.10.5</version>
     <name>Redis Connect Gemfire Function</name>
     <description>Redis Connect Gemfire Function for initial/batch load</description>
     <url>https://github.com/redis-field-engineering/redis-connect-gemfire-function</url>
